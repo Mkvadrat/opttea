@@ -1,0 +1,42 @@
+.b1, .b2, .b3, .b4 {
+     display:block; 
+     overflow:hidden;
+}
+
+.b1, .b2, .b3 {
+     height:2px;
+
+}
+
+.b2, .b3, .b4 {
+     background:#ffffff;
+     border-left:2px solid #66a400;
+     border-right:2px solid #66a400;
+}
+
+.b1 {
+     margin:0 5px;
+     background:#66a400;
+}
+
+.b2 {
+     margin:0 3px;
+     border-width:0 2px;
+}
+
+.b3 {
+     margin:0 2px; 
+}
+
+.b4 {
+     height:2px; 
+     margin:0 1px;
+}
+
+.content {
+     background:#ffffff;
+     border:0 solid #66a400; 
+     border-width:0 2px;
+	 padding:10px;
+}
+

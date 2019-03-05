@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<films>
+	<film urlIMG="11.jpg" link="http://ya.ru"></film>
+	<film urlIMG="22.jpg" link="http://google.ru"></film>
+	<film urlIMG="33.jpg" link="http://ya.ru"></film>
+	<film urlIMG="44.jpg" link="http://google.ru"></film>
+	<film urlIMG="55.jpg" link="http://ya.ru"></film>
+	<film urlIMG="66.jpg" link="http://google.ru"></film>
+	<film urlIMG="77.jpg" link="http://ya.ru"></film>
+	<film urlIMG="88.jpg" link="http://google.ru"></film>
+</films>
