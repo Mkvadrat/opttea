@@ -1,15 +1,19 @@
-<?php  include ("login/lock.php"); 
+<?php  include ("login/lock.php");  ?>
 
+<?
 	$id = $_GET['tov'];
 	$cat = $_GET['cat'];
 	
 	if(isset($_POST['name'])){
-		$name = $_POST['name'];
-		$text = $_POST['text'];
+		include ("blocks/transelit.php");  
+		
+		$name = mysql_real_escape_string($_POST['name']);
+		$text = mysql_real_escape_string ($_POST['text']);
 		$desc = $_POST['desc'];
 		$massa = $_POST['massa'];
 		$sost = $_POST['sost'];
 		$nazn = $_POST['nazn'];
+		$link_product = $_POST['link_product'];
 		$pr_melk = $_POST['pr_melk'];
 		$pr_opt = $_POST['pr_opt'];
 		$pr_roz = $_POST['pr_rozn'];
@@ -28,47 +32,31 @@
 			`priceRoznica` = '$pr_roz',
 			`Sostav` = '$sost',
 			`Naznachenie` = '$nazn',
+			`link_product` = '$link_product',
 			`meta_d` = '$description',
 			`title` = '$name',
 			`cost_opt_ru` = '$cost_opt_ru',
 			`cost_roz_ru` = '$cost_roz_ru'
 			 WHERE `id` ='$id'
-			");
+			") or die(mysql_error());
 			
 		if ($_POST['foto']) {
-			
-			
 
 			$userfile=$_FILES['foto2'];
 			$uploaddir ="../img/tovar/";
-			$temp=$_FILES['foto2']['name'];
-			
+			$temp= translitIt($_FILES['foto2']['name']);
+			$uploadfile = $uploaddir . $temp;
 		
 			if ($temp) {
-				$format = substr($_FILES["foto2"]["name"], -3);
-					
-				$n_arr = array('a', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 's', 'd', 'f', 'g');
-				for($i = 0; $i<10; $i++){
-					$n = mt_rand(0, 21);
-					$new_name .= $n_arr[$n];	
-				}
-				
-				$new_name .= '.'.$format;
-				
-				$uploadfile = $uploaddir . $new_name;
-				
-				
 				if(copy($_FILES['foto2']['tmp_name'], $uploadfile)) {
-					$foto_sql = $_FILES["foto2"]["name"];
-					$query = mysql_query("  UPDATE `Tovari` SET `img` = '$new_name' WHERE `id` ='$id'  ");
+					$foto_sql = translitIt($_FILES["foto2"]["name"]);
+					$query = mysql_query("  UPDATE `Tovari` SET `img` = '$foto_sql' WHERE `id` ='$id'  ");
 				} else {
 					  echo("Ошибка загрузки файла");
 				}
 				$mes = "<h3> Информация успешно добавлена </h3> ";
 			}
 		}
-		
-		header('location:tovar.php?tov='.$id.'&cat='.$cat);
 	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -90,12 +78,19 @@
     	<?
 			$querySlide=mysql_query("SELECT * FROM `Tovari`  where  `id`= '$id' ");
 			$rowSlide=mysql_fetch_array($querySlide);
-			
+			$title_name = str_replace('"', '', $rowSlide['title']);
+			if(!empty($rowSlide['img'])){
+				$path = '../img/tovar/';
+				
+				$fotos = $path.$rowSlide['img'];
+			}else{
+				$fotos = '../img/tea/no_image.png';
+			}
 			echo('
 		<table id="tovTable" align="center" border="0" cellspacing="0" cellpadding="2">
           <tr>
             <td class="tov_name"> НАЗВАНИЕ</td>
-            <td><input type="text" size="100" name="name" value="'.$rowSlide['title'].'"></td>
+            <td><input type="text" size="100" name="name" value="'.$title_name.'"></td>
             <td>&nbsp;</td>
           </tr>
           <tr>
@@ -106,7 +101,7 @@
            <tr>
             <td class="tov_name"> ФОТО</td>
             <td align="center">
-				<img src="../img/tovar/'.$rowSlide['img'].'"><br>
+				<img src="'.$fotos.'"><br>
 				<input type="file" name="foto2" size="30">
 				<input type="hidden" name="foto" value="1" />
 			</td>
@@ -130,6 +125,11 @@
            <tr>
             <td class="tov_name"> НАЗНАЧЕНИЕ</td>
             <td><textarea cols="75" rows="5" name="nazn">'.$rowSlide['Naznachenie'].'</textarea></td>
+            <td>&nbsp;</td>
+          </tr>
+		  <tr>
+            <td class="tov_name">ССЫЛКА НА САЙТ</td>
+			<td><input type="text" size="100" name="link_product" value="'.$rowSlide['link_product'].'"></td>
             <td>&nbsp;</td>
           </tr>
            <tr>

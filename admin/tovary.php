@@ -97,11 +97,21 @@ if (isset($_GET['del'])) {
 				//
 				
 				$name = $rowSlide['title'];
-				$img = '<img src="../img/tovar/'.$rowSlide['img'].'">';
+				
+				
+				if(!empty($rowSlide['img'])){
+					$path = '../img/tovar/';
+					
+					$fotos = $path.$rowSlide['img'];
+				}else{
+					$fotos = '../img/tea/no_image.png';
+				}
+				
+				$img = '<img src="'.$fotos.'">';
 				
 				if($name == '' and $rowSlide['img'] == ''){
 					$name = '<span class="null-place">пустое место</span>';
-					$img = '';
+					$img = $img;
 				}
 				
 				echo('

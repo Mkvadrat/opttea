@@ -123,7 +123,7 @@ if(isset($_POST['email'])){
 	include "blocks/libmail.php"; // вставляем файл с классом3
 	
 	$mail_to = $_POST['email'];
-	$tema = 'Заказ на сайте tea-crimea.ru';
+	$tema = 'Заказ на сайте ' . $_SERVER['SERVER_NAME'];
 	$from = 'tea-crimea@yandex.ru';
 	$emailContent = $_POST['message'];
 	
@@ -133,6 +133,7 @@ if(isset($_POST['email'])){
                                 order by `t`.`idCat`, `t`.`ord1`  ") or die(mysql_error());
 	while($row = mysql_fetch_array($query)){
 		$name = $row['name'];
+		$link = $row['link'];
 		$id_tov = $row['id_tov'];
 		$amount = $row['amount'];
 		$cost_ru = $row['cost_ru'];
@@ -155,14 +156,25 @@ if(isset($_POST['email'])){
 		}
 		$style = 'style="border:1px solid #f5f5f5"';
 		$kolSumm += $amount;
+		if($link){
 		$td .= '
 			<tr>
-				<td '.$style.' align="left"><a target="_blank" href="http://tea-crimea.ru/goods.php?tovar='.$id_tov.'">'.$name.'</a></td>
+				<td '.$style.' align="left"><a target="_blank" href="'.$link.'">'.$name.'</a></td>
 				<td '.$style.' align="center">'.$cur_cost.' '.$currency.'</td>
 				<td '.$style.'>'.$amount.' шт</td>
 				<td '.$style.' align="right">'.$cur_cena.' '.$currency.'</td>
 			</tr>
 			';
+		}else{
+		$td .= '
+			<tr>
+				<td '.$style.' align="left">'.$name.'</td>
+				<td '.$style.' align="center">'.$cur_cost.' '.$currency.'</td>
+				<td '.$style.'>'.$amount.' шт</td>
+				<td '.$style.' align="right">'.$cur_cena.' '.$currency.'</td>
+			</tr>
+			';
+		}
 	}
 	$td .= '
 			<tr style="background:#f5f5f5;">
@@ -197,9 +209,9 @@ if(isset($_POST['email'])){
 	$mpdf=new mPDF('win-1251','A4','','',10,15,10,15,0,10); 
 	$mpdf->useOnlyCoreFonts = true;    // false is default
 	$mpdf->SetProtection(array('print'));
-	$mpdf->SetTitle("tea-crimea.ru");
-	$mpdf->SetAuthor("tea-crimea.ru");
-	$mpdf->SetWatermarkText("tea-crimea.ru");
+	$mpdf->SetTitle($_SERVER['SERVER_NAME']);
+	$mpdf->SetAuthor($_SERVER['SERVER_NAME']);
+	$mpdf->SetWatermarkText($_SERVER['SERVER_NAME']);
 	$mpdf->showWatermarkText = true;
 	$mpdf->watermark_font = 'DejaVuSansCondensed';
 	$mpdf->watermarkTextAlpha = 0.04;

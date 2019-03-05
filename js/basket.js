@@ -30,7 +30,7 @@ function type_location(){
 	var c = $('#country option:selected').val();
 	var t = $('#type option:selected').val();
 	c = 'ru';
-	top.location = 'order.php?country='+c+'&type='+t;	
+	top.location = '/?country='+c+'&type='+t;	
 }
 
 
@@ -59,18 +59,15 @@ function calc(){
 		}else{
 			$('#summ_'+id).html('');
 		}
-		if(sum2 !== 0){
-			$('#summ2_'+id).html(sum2);
-		}else{
-			$('#summ2_'+id).html('');
-		}
+
 		allSumm +=sum;
-		allSumm2 +=sum2;
+		//console.log(allSumm)
 	});	
-	$('#amount').html(parseInt(amounts)+' רע.');
+	
+	$('#amount').html(parseInt(allSumm)+' רע.');
 	$('#allSumm-text').html('Èעמדמ:');
 	$('#allSumm').html(allSumm+' '+currency);
-	$('#allSumm2').html(allSumm2+' '+currency);
+	
 	
 	/*if(allSumm > 300000){
 		$('.sale-tr').show();

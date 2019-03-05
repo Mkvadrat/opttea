@@ -17,13 +17,24 @@ if (isset($_POST['save_name'])) {
 	exit();
 }
 
-	if(isset($_POST['name'])){
+if (isset($_POST['save_link'])) {
+	$id = $_POST['id'];
+	$val = $_POST['val'];
+	$val = iconv( 'UTF-8', 'windows-1251',  $val);
+	
+	mysql_query("Update  `categories` set `link` = '$val' WHERE `id` = '$id' ") or die(mysql_error());
+	
+	exit();
+}
+
+	if(isset($_POST['name']) || isset($_POST['link'])){
 		$queryLast=mysql_query("  SELECT * FROM `categories` ORDER BY `ord`  DESC  LIMIT 1 ");
 		$rowLast=mysql_fetch_array($queryLast);
 		$ord = ($rowLast['ord'] + 1);
 	
 		$name = $_POST['name'];
-		mysql_query( " INSERT INTO `categories` ( `id` , `nam_categories` , `description` , `img` , `img_left` , `ord` ) VALUES ('', '$name', '', '', '', '$ord');   "   );
+		$link = $_POST['link'];
+		mysql_query( " INSERT INTO `categories` ( `id` , `nam_categories` , `link` , `description` , `img` , `img_left` , `ord` ) VALUES ('', '$name', '$link', '', '', '', '$ord');   "   );
 		
 		$idFoto = mysql_insert_id();
 	}
@@ -120,6 +131,17 @@ if ($_POST['foto']) {
 			});
 		});
 		
+		$('.cat-link span').click(function(){
+			var id = $(this).parent().data('id');
+			var val = $(this).parent().find('input').val();
+			
+			save();
+			$.post('cat.php', {id:id, val:val, save_link:1}, function(data){
+				console.log(data);
+				saved();	
+			});
+		});
+		
 		$('.cat-img1').click(function(){
 			var id = $(this).parent().data('id');
 			$('#img1-id').val(id);
@@ -145,7 +167,6 @@ if ($_POST['foto']) {
 				//$('#edit-text').show().html('<img src="/img/load.gif" />');
 			}
 		});
-
 	
 	});
 	
@@ -158,7 +179,6 @@ if ($_POST['foto']) {
 		$('.tr[data-id='+id+'] .cat-img2').html('<img src="/img/catalog/'+src+'" /> ');
 		$('#ava_file2').val('');
 	}
-
 </script>
 
 <style>
@@ -172,12 +192,14 @@ if ($_POST['foto']) {
 	.col1 img, .col2 img {max-width:300px; max-height:150px;}
 	.del {color:#d9d9d9; cursor:pointer;}
 	.del:hover {color:red;}
+	
 	.cat-name {margin-top:10px;}
 	.cat-name span {color:#06C; border-bottom:1px dotted; cursor:pointer;}
+	.cat-link {margin-top:10px;}
+	.cat-link span {color:#06C; border-bottom:1px dotted; cursor:pointer;}
 </style>
 </head>
 <body>
-<div id="saved">сохранено</div>
 
 <form id="img1-form" style="position:absolute; visibility:hidden;" action="act_img1.php" target="ava_frame" enctype="multipart/form-data" method="post">
     <input name="Filedata" type="file" id="ava_file1" />
@@ -190,7 +212,7 @@ if ($_POST['foto']) {
     <input id="img2-id" name="id" type="hidden" value=""  />
     <iframe name="ava_frame" id="upload_image_iframe2"></iframe>
 </form>
-
+<div id="saved">сохранено</div>
 
 <table id="mainTab" align="center" width="1200" border="0" cellspacing="5" cellpadding="0">
   <tr>
@@ -211,8 +233,8 @@ if ($_POST['foto']) {
 					</div>
 					');*/
 			echo('<div id="sort">');
-				while($rowSlide=mysql_fetch_array($querySlide)) {   
-					
+				while($rowSlide=mysql_fetch_array($querySlide)) {       
+				
 						$edit = '
 								<div data-id="'.$rowSlide['id'].'" class="cat-name">
 									<input  type="text" value="'.$rowSlide['nam_categories'].'"><br>
@@ -220,8 +242,13 @@ if ($_POST['foto']) {
 								</div>
 								';
 								
-						if($rowSlide['id'] == 26) $edit = '';
-						
+						$link = '
+								<div data-id="'.$rowSlide['id'].'" class="cat-link">
+									<input  type="text" value="'.$rowSlide['link'].'"><br>
+									<span>сохранить</span>
+								</div>
+								';
+								
 						if($rowSlide['img'] <> ''){
 							$img1 = '<img src="../img/catalog/'.$rowSlide['img'].'">';
 						}else{
@@ -233,7 +260,7 @@ if ($_POST['foto']) {
 						}else{
 							$img2 = '<span>загрузить фото</span>';
 						}
-				     
+				 
 						echo('
 							<div data-id="'.$rowSlide['id'].'" class="tr">
 								<div class="col1 cat-img1">'.$img1.'</div>
@@ -241,6 +268,7 @@ if ($_POST['foto']) {
 								<div class="col2">
 									<a class="titleA" href="tovary.php?cat='.$rowSlide['id'].'"> ОТКРЫТЬ </a>
 									'.$edit.'
+									'.$link.'
 								</div>
 								<div class="col3"><span data-id="'.$rowSlide['id'].'" class="del">удалить</span></div>
 								<div class="col4"><img title="Перетащить вверх или вниз для сортировки" src="/img/drag.png" /></div>
@@ -260,12 +288,14 @@ if ($_POST['foto']) {
                 <td>Фото категории</td>
                 <td>Фото правой панели</td>
                 <td>Название категории</td>
+				<td>Ссылка на сайт</td>
                 <td>Действие</td>
               </tr>
               <tr>
                 <td ><input type="file" size="10" name="foto1" /></td>
                 <td><input type="file" size="10" name="foto2" /></td>
                 <td><input type="text" name="name" size="30" /></td>
+				<td><input type="text" name="link" size="30" /></td>
                 <td><input type="submit" value="добавить" /></td>
               </tr>
             </table>

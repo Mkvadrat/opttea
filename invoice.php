@@ -25,6 +25,7 @@ $email = $_POST['email'];
 $country = $_POST['country'];
 $country_name = $_POST['country_name'];
 $type = $_POST['type'];
+$date = date('Y-m-d');
 
 $ur = $_POST['type_lico'];
 $ur_name = $_POST['ur_name'];
@@ -43,8 +44,6 @@ if($ur == 0){
 				Юр. адрес: <b>'.$ur_adres.'</b><br>
 				';
 }
-
-$date = date('Y-m-d');
 
 if($country == 'ru'){
 	$currency = 'руб';	
@@ -74,6 +73,9 @@ $cost_ua_arr[5] = 'large_cost_ua';
 
 mysql_query(" INSERT INTO `orders` (`id`, `name`, `phone`, `email`, `delivery`, `city`, `date`, `country`, `type`, `dop`, `ur`, `ur_name`, `ur_ogrn`, `ur_inn`, `ur_adres`) 
 							VALUES (NULL, '$name2', '$tel', '$email', '$dos', '$city', '$date', '$country', '$type', '$dop', '$ur', '$ur_name', '$ur_ogrn', '$ur_inn', '$ur_adres'); ");
+
+//mysql_query(" INSERT INTO `orders` (`id`, `name`, `phone`, `email`, `delivery`, `city`, `date`, `country`, `type`, `dop`) 
+//							VALUES (NULL, '$name2', '$tel', '$email', '$dos', '$city', '$date', '$country', '$type', '$dop'); ");
 $id_ord = mysql_insert_id();
 
 $Month_Text['1'] = 'января';
@@ -172,7 +174,7 @@ foreach ($idArr as $key => $id2) {
 		
 		$html .= '
 			<tr>
-			<td align="left"><a target="_blank" href="http://tea-crimea.ru/goods.php?tovar='.$id2.'">'.$name.'</a></td>
+			<td align="left"><a target="_blank" href="http://' . $_SERVER['SERVER_NAME'] . '/goods.php?tovar='.$id2.'">'.$name.'</a></td>
 			<td align="center">'.$table_cost.' '.$currency.'</td>
 			<td>'.$kol.' шт</td>
 			<td align="right">'.$cur_cena.' '.$currency.'</td>
@@ -195,11 +197,11 @@ $html .= '
 ';
 
 		
-$title = 'Заказ tea-crimea.ru №'.$id_ord.' '.$country_name.'  '.$summ.' '.$currency.' '.$kolSumm.' шт. ('.$type_arr[$type].')'; 
+$title = 'Заказ nectar.crimea.ua №'.$id_ord.' '.$country_name.'  '.$summ.' '.$currency.' '.$kolSumm.' шт. ('.$type_arr[$type].')'; 
 $to = 'tea-crimea@yandex.ru'; 
 //$to = 'maxim-bonart@mail.ru'; 
 if($email == ''){
-	$from = 'no_email@tea-crimea.ru';
+	$from = 'no_email@tea.crimea.ua';
 }else{
 	$from=$email; 
 }
@@ -207,7 +209,7 @@ if($email == ''){
 
 // функция, которая отправляет наше письмо. 
 mail($to, $title, $html,  'From:'.$from. "\r\n" . "MIME-Version: 1.0\r\nContent-type: text/html; charset=windows-1251");
-header("Location:http://tea-crimea.ru/orderok.php");
+header("Location: http://" . $_SERVER['SERVER_NAME'] .  "/orderok.php");
 
 
 ?>
