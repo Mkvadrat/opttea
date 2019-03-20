@@ -83,7 +83,6 @@ if($country == 'ru'){
 <meta name="description" content="<?php echo $row['meta_d']; ?> ">
 <meta name="keywords" content=" <?php echo $row['meta_k']; ?>">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title><?php echo $row['title']; ?></title>
 
@@ -192,18 +191,19 @@ if($country == 'ru'){
         <div class="container">
           <div class="row">
             <div class="col-md-10 top-nav">
-				<ul>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=4">О нас</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a></li>
-				</ul>
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Заказ и оплата</a></li>
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Франчайзинг</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
             </div>
             <div class="col-md-2 entry">
-
+              <a href="#">Вход/</a>
+              <a href="#">Регистрация</a>
             </div>
           </div>
         </div>
@@ -211,19 +211,19 @@ if($country == 'ru'){
       <div class="header-info">
         <div class="container">
           <div class="row header-desk">
-            <div class="col-md-2 col-sm-3 col-xs-12 logo">
+            <div class="col-md-2 logo">
               <a href="#"><img src="img/tea/logo-big.png" alt="logo" width="180" height="80"></a>
             </div>
-            <div class="col-md-4 col-sm-9 col-xs-12 cooperation">
+            <div class="col-md-3 cooperation">
               <p>Крым,  Ялта,  г. Алупка,<br>ул. Крутой спуск  д. 12 а</p>
               <a href="#" class="button">Сотрудничество и опт</a>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 data-info">
+            <div class="col-md-5 data-info">
               <div class="row ">
-                <div class="col-md-6 col-sm-6 col-xs-6 data">
+                <div class="col-md-6 data">
                   <p>Время работы:<br>Пн-Пт с 9:00 до 18:00</p>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 phone">
+                <div class="col-md-6 phone">
                   <div class="phone-icon">
                     <img src="img/tea/phone.png" alt="phone" width="24" height="24">
                   </div>
@@ -240,72 +240,55 @@ if($country == 'ru'){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 nav-bottom">
-					 <ul id="nav">
-                        <li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=73">Фитонастойки</a></li>
-                        <li class="items">
-							<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
+					<ul id="nav">
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=73">Фитонастойки</a></li>
+						<li class="items">
+							<a href="http://tea.loc/index.php?route=product/category&amp;path=59">Фиточаи</a>
 							<ul>
-								<li><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59_71">Пункт 1</a></li>
-								<li><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59_72">Пункт 2</a></li>
+								<li><a href="http://tea.loc/index.php?route=product/category&amp;path=59_71">Пункт 1</a></li>
+								<li><a href="http://tea.loc/index.php?route=product/category&amp;path=59_72">Пункт 2</a></li>
 							</ul>
 						</li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=61">Медовая продукция</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=62">Крымское варенье</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=63">Восточные сладости</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=64">Пряности</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=66">Сувениры</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=74">Глинтвейн</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a></li>
-                        
-                        <li><a href="#" class="archive"></a></li>
-                      </ul>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=60">Стевия, травы</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=61">Медовая продукция</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=62">Крымское варенье</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=63">Восточные сладости</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=64">Пряности</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=66">Сувениры</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=74">Глинтвейн</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=68">Крымские бальзамы</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=69">Косметические масла</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=70">Фигурное мыло</a></li>
+
+						<li><a href="#" class="archive"></a></li>
+					</ul>
 					  
 				</div>
 			</div>
 		</div>
     </div>
 	
-	<section class="section__order">
+	<section >
 		<div class="container">
 			<div>
 				<form onsubmit="return vilidOrd()" action="invoice.php" method="post" enctype="multipart/form-data">
 				
 				   <div id="order-info">
-							<div class="top__info">
-								<div class="top__info-item">
-									<div>Розничная цена</div>
-									<div>до 10 000 руб</div>
-								</div>
-								<div class="top__info-item">
-									<div>Мелкий опт</div>
-									<div>от 10 000 до 20 000 руб.</div>
-								</div>
-								<div class="top__info-item">
-									<div>Опт</div>
-									<div>от 20 000 до 300 000 руб.</div>
-								</div>
-								<div class="top__info-item">
-									<div>Крупный опт</div>
-									<div>свыше 300 000 руб.</div>
-								</div>
-							</div>
-							<div class="select__item">
-								<div class="select__block-title">Выбрать категорию:</div>
-								<div class="select__block">
-									<select id="type">
-										<option <?=$sel_type[5]?> value="5">Франчайзинг</option>
-										<option <?=$sel_type[4]?> value="4">Крупный опт</option>
-										<option <?=$sel_type[3]?> value="3">Опт</option>
-										<option <?=$sel_type[2]?> value="2">Мелкий опт</option>
-										<option <?=$sel_type[1]?> value="1">Розница</option>
-									</select>
-								</div>
-							</div>
+					   <p>
+							<div>Розничная цена до 10 000 руб, мелкий опт от 10 000 руб. до 20 000 руб, опт от 20 000 до 300 000 руб, свыше 300 000руб - крупный опт.</div>
+						</p>
+					   
+							<select id="type">
+								<option <?=$sel_type[5]?> value="5">Франчайзинг</option>
+								<option <?=$sel_type[4]?> value="4">Крупный опт</option>
+								<option <?=$sel_type[3]?> value="3">Опт</option>
+								<option <?=$sel_type[2]?> value="2">Мелкий опт</option>
+								<option <?=$sel_type[1]?> value="1">Розница</option>
+							</select>
 					</div>
-					<div class="scroll__table">
+					
 					<?php
 						$queryTov=mysql_query("SELECT *, `Tovari`.`id` as `idTov`, `Tovari`.`img` as `fotoTov`, `categories`.`id` as `idCat`, `link` as link
 												FROM  `Tovari` 
@@ -378,7 +361,7 @@ if($country == 'ru'){
 						?>
 							<div idN="<?php echo $id; ?>" class="cartTr2<?php echo $class_tr; ?>">
 								
-								<span w="<?php echo $width; ?>" foto="<?php echo $fotos; ?>" class="fotoTd"><img src="<?php echo $fotos; ?>" height="38" width="auto"></span>
+								<span w="<?php echo $width; ?>" foto="<?php echo $fotos; ?>" class="fotoTd"><img src="<?php echo $fotos; ?>" height="15" width="20"></span>
 								
 								<?php if($link_product){ ?>
 									<span class="name-product"><a href="<?php echo $link_product; ?>"><?php echo $tovar; ?></a></span>
@@ -388,11 +371,9 @@ if($country == 'ru'){
 								
 								<?php if($not_exist == 0){ ?>
 									<span id="cena<?php echo $id; ?>"><?php echo $cena; ?> </span>
-									<span class="input__kol">
-										<input type="hidden" value="<?php echo $cena; ?>" name="cena[<?php echo $id; ?>]">
-										<input autocomplete="off" name="kol[<?php echo $id; ?>]" tov="<?php echo $id; ?>" class="kol" type="text" size="3" value="">
-									</span>
-									<span id="summ_<?php echo $id; ?>" class="summ__last"></span>
+									<input type="hidden" value="<?php echo $cena; ?>" name="cena[<?php echo $id; ?>]">
+									<input autocomplete="off" name="kol[<?php echo $id; ?>]" tov="<?php echo $id; ?>" class="kol" type="text" size="3" value="">
+									<span id="summ_<?php echo $id; ?>"></span>
 									<input type="hidden" name="idTov[<?php echo $id; ?>]" value="<?php echo $id; ?>" />
 								<?php }else{ ?>
 									<span class="not-exist" colspan="3">временно нет на складе</span>
@@ -402,8 +383,8 @@ if($country == 'ru'){
 						<?php
 							}
 						?>
-							<div class="total__block">
-								<div> <b id="allSumm-text"></b> </div>
+							<div>
+								<div colspan="3" align="right"> <b id="allSumm-text"></b> </div>
 								<div id="amount"></div>
 								<div> <b id="allSumm"></b></div>
 							</div>
@@ -411,46 +392,53 @@ if($country == 'ru'){
 						<?php
 						}
 						?>
-						</div>
-<div class="form__order">
-					<div id="type-check">					
+
+					<div id="type-check">
 						<label>
-							Физ лицо
 							<input name="type_lico" checked="checked" type="radio" value="0" />
-							<span class="checkmark"></span>							
-						</label>						
+							Физ лицо
+						</label>
+						&nbsp;
 						<label>
-							Юр лицо
 							<input name="type_lico" type="radio" value="1" />
-							<span class="checkmark"></span>							
+							Юр лицо
 						</label>
 					</div>
-					<div class="form__block">
-						<div class="tr-ur">						
-						<input placeholder="Наименование" id="ur-name" type="text" name="ur_name" value="" size="40" />
-						</div>
-						<div class="tr-ur">							
-							<input placeholder="ИНН" id="ur-inn" type="text" name="ur_inn" value="" size="40" />
-						</div>
-						<div class="tr-ur">							
-							<input placeholder="ОГРН" id="ur-ogrn" type="text" name="ur_ogrn" value="" size="40" />
-						</div>
-						<div class="tr-ur">						
-						<input placeholder="Юр. адрес" id="ur-adres" type="text" name="ur_adres" value="" size="40" />
-						</div>						
-						<input placeholder="ФИО" id="baskN" type="text" name="name2" value="" size="40" />
-						<input  placeholder="Ваш телефон" id="baskT" type="text" name="tel" value="" size="40" />
-						<input  placeholder="Ваш email"  id="email" type="text" name="email" value="" size="40" />
-						<input  placeholder="Способ доставки"  id="baskD" type="text" name="dos" value="" size="40" />
-						<input  placeholder="Страна"  id="baskCou" type="text" name="country_name" value="" size="40" />						
-						<input  placeholder="Город"  id="baskC" type="text" name="city" value="" size="40" />						
-						<textarea  placeholder="Комментарий" id="dop-text" name="dop" rows="4"></textarea>
+					<div class="tr-ur">
+					Наименование
+					<input placeholder="" id="ur-name" type="text" name="ur_name" value="" size="40" />
 					</div>
-					<input type="submit" value="Отправить" />
+					<div class="tr-ur">
+						ИНН
+						<input placeholder="" id="ur-inn" type="text" name="ur_inn" value="" size="40" />
+					</div>
+					<div class="tr-ur">
+						ОГРН
+						<input placeholder="" id="ur-ogrn" type="text" name="ur_ogrn" value="" size="40" />
+					</div>
+					<div class="tr-ur">
+					Юр. адрес
+					<input placeholder="" id="ur-adres" type="text" name="ur_adres" value="" size="40" />
+					</div>
+					ФИО
+					<input placeholder="фамилия, имя, отчество" id="baskN" type="text" name="name2" value="" size="40" />
+					Ваш телефон
+					<input  id="baskT" type="text" name="tel" value="" size="40" />
+					Ваш email
+					<input  id="email" type="text" name="email" value="" size="40" />
+					Способ доставки
+					<input  id="baskD" type="text" name="dos" value="" size="40" />
+					Страна
+					<input  id="baskCou" type="text" name="country_name" value="" size="40" />
+					Город
+					<input  id="baskC" type="text" name="city" value="" size="40" />
+					Комментарий
+					<textarea id="dop-text" name="dop" rows="4"></textarea>
+
+					<input type="submit" value="отправить" />
 
 					<input type="hidden" name="country" value="<?=$country?>" />
 					<input type="hidden" name="type" value="<?=$type?>" />
-					</div>
 				</form>
 			</div>
 		</div>
@@ -461,58 +449,62 @@ if($country == 'ru'){
         <div class="row">
           <div class="col-md-6">
             <div class="footer-content">
-				<div class="footer-nav">
-					<nav>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/news">Блог</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a>
-					</nav>
-				</div>
-				<div class="footer-product">
-					<nav>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=61">Медовая продукция</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=62">Крымское варенье</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=63">Восточные сладости</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=64">Пряности</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=66">Сувениры</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a>
-					</nav>
-				</div>
-				<div class="footer-company">
+              <div class="footer-nav">
+                <nav>
+                  <a href="#">Каталог</a>
+                  <a href="#">Прайс-лист</a>
+                  <a href="#">Заказ и оплата</a>
+                  <a href="#">Наши магазины </a>
+                  <a href="#">Документы </a>
+                  <a href="#">Франчайзинг</a>
+                  <a href="#">Блог</a>
+                  <a href="#">Контакты</a>
+                </nav>
+              </div>
+              <div class="footer-product">
+                <nav>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=59">Фиточаи</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=60">Стевия, травы</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=61">Медовая продукция</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=62">Крымское варенье</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=63">Восточные сладости</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=64">Пряности</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=66">Сувениры</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=68">Крымские бальзамы</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=69">Косметические масла</a>
+					<a href="http://tea.loc/index.php?route=product/category&amp;path=70">Фигурное мыло</a>
+                </nav>
+              </div>
+              <div class="footer-company">
                 <div class="address-wrapper">
                   <div class="address">
-                    <p>Крым,  Ялта,  г. Алупка<br>ул. Крутой спуск,  д. 12-а</p>
+                    <p>Крым,  Ялта,  г. Алупка,<br>ул. Крутой спуск  д. 12 а</p>
                   </div>
                   <div class="email-footer">
-                    <a href="mailto:q3dm0@yahoo.com">E-mail: q3dm0@yahoo.com</a>
+                    <a href="mailto:tea-crimea@yandex.ru">E-mail: tea-crimea@yandex.ru</a>
                   </div>
                 </div>
                 <div class="footer-data">
-                  <p>Время работы:<br>Пн.-Пт. с 9:00 до 18:00</p>
+                  <p>Время работы:<br>Пн-Пт с 9:00 до 18:00</p>
                 </div>
                 <div class="phone-footer">
-                  <a href="tel:+79788649637" class="phone-big">+79788649637</a>
-<a href="#">Обратный звонок</a>
-<a href="#">Отследить заказ</a>                </div>
+                  <a href="tel:+79788649637" class="phone-big">+7(978)8649637</a>
+                  <a href="#">Обратный звонок</a>
+                  <a href="#">Отследить заказ</a>
+                </div>
               </div>
               <div class="copy">
                 <h2>2008 - 2019 © Все права защищены «Чаи Крыма» ™</h2>
-                <p>Сайт разработан в <span> <a href="http://mkvadrat.com" target="_blank"><img src="img/logo-com.png" alt="logo" width="32" height="32"></a>  </span></p>              </div>
+                <p>Сайт разработан в <span> <a href="http://mkvadrat.com" target="_blank"><img src="img/tea/logo-com.png" alt="logo" width="32" height="32"></a>  </span></p>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="map">
-              <div id="map"></div>
-
-                          </div>
+                <div id="map"></div>
+            </div>
           </div>
         </div>
       </div>

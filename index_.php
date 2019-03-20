@@ -192,18 +192,19 @@ if($country == 'ru'){
         <div class="container">
           <div class="row">
             <div class="col-md-10 top-nav">
-				<ul>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=4">О нас</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a></li>
-					<li><a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a></li>
-				</ul>
+              <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Заказ и оплата</a></li>
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Документы</a></li>
+                <li><a href="#">Франчайзинг</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
             </div>
             <div class="col-md-2 entry">
-
+              <a href="#">Вход/</a>
+              <a href="#">Регистрация</a>
             </div>
           </div>
         </div>
@@ -240,28 +241,30 @@ if($country == 'ru'){
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 nav-bottom">
-					 <ul id="nav">
-                        <li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=73">Фитонастойки</a></li>
-                        <li class="items">
-							<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
+					<ul id="nav">
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=73">Фитонастойки</a></li>
+						<li class="items">
+							<a href="http://tea.loc/index.php?route=product/category&amp;path=59">Фиточаи</a>
 							<ul>
-								<li><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59_71">Пункт 1</a></li>
-								<li><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59_72">Пункт 2</a></li>
+								<li><a href="http://tea.loc/index.php?route=product/category&amp;path=59_71">Пункт 1</a></li>
+								<li><a href="http://tea.loc/index.php?route=product/category&amp;path=59_72">Пункт 2</a></li>
 							</ul>
 						</li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=61">Медовая продукция</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=62">Крымское варенье</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=63">Восточные сладости</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=64">Пряности</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=66">Сувениры</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=74">Глинтвейн</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a></li>
-						<li class="items"><a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a></li>
-                        
-                        <li><a href="#" class="archive"></a></li>
-                      </ul>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=60">Стевия, травы</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=61">Медовая продукция</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=62">Крымское варенье</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=63">Восточные сладости</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=64">Пряности</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=66">Сувениры</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=74">Глинтвейн</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=68">Крымские бальзамы</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=69">Косметические масла</a></li>
+						<li class="items"><a href="http://tea.loc/index.php?route=product/category&amp;path=70">Фигурное мыло</a></li>
+
+						<li><a href="#" class="archive"></a></li>
+					</ul>
 					  
 				</div>
 			</div>
@@ -461,32 +464,35 @@ if($country == 'ru'){
         <div class="row">
           <div class="col-md-6">
             <div class="footer-content">
-				<div class="footer-nav">
-					<nav>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/news">Блог</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a>
-					</nav>
-				</div>
-				<div class="footer-product">
-					<nav>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=61">Медовая продукция</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=62">Крымское варенье</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=63">Восточные сладости</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=64">Пряности</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=66">Сувениры</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a>
-						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a>
-					</nav>
-				</div>
-				<div class="footer-company">
+              <div class="footer-nav">
+                                <nav>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Каталог</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Прайс-лист</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Заказ и оплата</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Наши магазины</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Документы</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=#">Франчайзинг</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=information/news">Блог</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=information/contact">Контакты</a>
+                                  </nav>
+                              </div>
+              <div class="footer-product">
+                                <nav>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=61">Медовая продукция</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=62">Крымское варенье</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=63">Восточные сладости</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=64">Пряности</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=65">Эфирные и косметические масла</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=66">Сувениры</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=69">Косметические масла</a>
+                                      <a href="http://teadev.mkvadrat.com/index.php?route=product/category&amp;path=70">Фигурное мыло</a>
+                                  </nav>
+                              </div>
+              <div class="footer-company">
                 <div class="address-wrapper">
                   <div class="address">
                     <p>Крым,  Ялта,  г. Алупка<br>ул. Крутой спуск,  д. 12-а</p>
