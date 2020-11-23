@@ -420,12 +420,17 @@ if($country == 'ru'){
 					Юр. адрес
 					<input placeholder="" id="ur-adres" type="text" name="ur_adres" value="" size="40" />
 					</div>
+<<<<<<< HEAD
 					Фамилия
 					<input placeholder="фамилия" id="baskN" type="text" name="name2" value="" size="40" />
 					Имя
 					<input placeholder="имя" id="firstname" type="text" name="firstname" value="" size="40" />
 					Отчество
 					<input placeholder="отчество" id="patronymic" type="text" name="patronymic" value="" size="40" />
+=======
+					ФИО
+					<input placeholder="фамилия, имя, отчество" id="baskN" type="text" name="name2" value="" size="40" />
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 					Ваш телефон
 					<input  id="baskT" type="text" name="tel" value="" size="40" />
 					Ваш email

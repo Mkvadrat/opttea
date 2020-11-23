@@ -198,12 +198,22 @@ if($country == 'ru'){
           <div class="row">
             <div class="col-md-10 top-nav">
 				<ul>
+<<<<<<< HEAD
 					<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=4">О нас</a></li>
 					<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=7">Прайс-лист</a></li>
 					<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a></li>
 					<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=8">Наши магазины</a></li>
 					<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=9">Документы</a></li>
 					<li><a href="http://tea-crimea.ru/index.php?route=information/contact">Контакты</a></li>
+=======
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=4">О нас</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a></li>
+					<li><a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a></li>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 				</ul>
             </div>
             <div class="col-md-2 entry">
@@ -216,7 +226,11 @@ if($country == 'ru'){
         <div class="container">
           <div class="row header-desk">
             <div class="col-md-2 col-sm-3 col-xs-12 logo">
+<<<<<<< HEAD
               <a href="http://tea-crimea.ru/"><img src="img/tea/logo-big.png" alt="logo" width="180" height="80"></a>
+=======
+              <a href="#"><img src="img/tea/logo-big.png" alt="logo" width="180" height="80"></a>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
             </div>
             <div class="col-md-4 col-sm-9 col-xs-12 cooperation">
               <p>Крым,  Ялта,  г. Алупка,<br>ул. Крутой спуск  д. 12 а</p>
@@ -282,7 +296,11 @@ if($country == 'ru'){
 							<div class="top__info">
 								<div class="top__info-item">
 									<div>Розничная цена</div>
+<<<<<<< HEAD
 									<div>от 3 000 до 10 000 руб</div>
+=======
+									<div>до 10 000 руб</div>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 								</div>
 								<div class="top__info-item">
 									<div>Мелкий опт</div>
@@ -416,6 +434,7 @@ if($country == 'ru'){
 						<?php
 						}
 						?>
+<<<<<<< HEAD
 					</div>
 					<div class="form__order" style="display:none;">
 						<div id="type-check">					
@@ -478,6 +497,47 @@ if($country == 'ru'){
 								<div>свыше 300 000 руб.</div>
 							</div>
 						</div>
+=======
+						</div>
+<div class="form__order">
+					<div id="type-check">					
+						<label>
+							Физ лицо
+							<input name="type_lico" checked="checked" type="radio" value="0" />
+							<span class="checkmark"></span>							
+						</label>						
+						<label>
+							Юр лицо
+							<input name="type_lico" type="radio" value="1" />
+							<span class="checkmark"></span>							
+						</label>
+					</div>
+					<div class="form__block">
+						<div class="tr-ur">						
+						<input placeholder="Наименование" id="ur-name" type="text" name="ur_name" value="" size="40" />
+						</div>
+						<div class="tr-ur">							
+							<input placeholder="ИНН" id="ur-inn" type="text" name="ur_inn" value="" size="40" />
+						</div>
+						<div class="tr-ur">							
+							<input placeholder="ОГРН" id="ur-ogrn" type="text" name="ur_ogrn" value="" size="40" />
+						</div>
+						<div class="tr-ur">						
+						<input placeholder="Юр. адрес" id="ur-adres" type="text" name="ur_adres" value="" size="40" />
+						</div>						
+						<input placeholder="ФИО" id="baskN" type="text" name="name2" value="" size="40" />
+						<input  placeholder="Ваш телефон" id="baskT" type="text" name="tel" value="" size="40" />
+						<input  placeholder="Ваш email"  id="email" type="text" name="email" value="" size="40" />
+						<input  placeholder="Способ доставки"  id="baskD" type="text" name="dos" value="" size="40" />
+						<input  placeholder="Страна"  id="baskCou" type="text" name="country_name" value="" size="40" />						
+						<input  placeholder="Город"  id="baskC" type="text" name="city" value="" size="40" />						
+						<textarea  placeholder="Комментарий" id="dop-text" name="dop" rows="4"></textarea>
+					</div>
+					<input type="submit" value="Отправить" />
+
+					<input type="hidden" name="country" value="<?=$country?>" />
+					<input type="hidden" name="type" value="<?=$type?>" />
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 					</div>
 				</form>
 			</div>
@@ -491,6 +551,7 @@ if($country == 'ru'){
             <div class="footer-content">
 				<div class="footer-nav">
 					<nav>
+<<<<<<< HEAD
 						<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=9">Документы</a>
 						<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=7">Прайс-лист</a>
 						<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a>
@@ -500,6 +561,18 @@ if($country == 'ru'){
 					</nav>
 				</div>
 				<!--<div class="footer-product">
+=======
+						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=9">Документы</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=7">Прайс-лист</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=8">Наши магазины</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/information&amp;information_id=12">Франчайзинг</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/news">Блог</a>
+						<a href="http://tea.mkvadrat.com/index.php?route=information/contact">Контакты</a>
+					</nav>
+				</div>
+				<div class="footer-product">
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 					<nav>
 						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=59">Фиточаи</a>
 						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=60">Стевия, травы</a>
@@ -512,25 +585,39 @@ if($country == 'ru'){
 						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=67">Живое Крымское мыло</a>
 						<a href="http://tea.mkvadrat.com/index.php?route=product/category&amp;path=68">Крымские бальзамы</a>
 					</nav>
+<<<<<<< HEAD
 				</div>-->
+=======
+				</div>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 				<div class="footer-company">
                 <div class="address-wrapper">
                   <div class="address">
                     <p>Крым,  Ялта,  г. Алупка<br>ул. Крутой спуск,  д. 12-а</p>
                   </div>
                   <div class="email-footer">
+<<<<<<< HEAD
                     <a href="mailto:info@tea-crimea.ru">E-mail: info@tea-crimea.ru</a>
+=======
+                    <a href="mailto:q3dm0@yahoo.com">E-mail: q3dm0@yahoo.com</a>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
                   </div>
                 </div>
                 <div class="footer-data">
                   <p>Время работы:<br>Пн.-Пт. с 9:00 до 18:00</p>
                 </div>
                 <div class="phone-footer">
+<<<<<<< HEAD
                   <a href="tel:+79782184408" class="phone-big">+79782184408</a>
 				  <a href="tel:+79787528287" class="phone-big">+79787528287</a>
                   <a href="tel:+79781417930" class="phone-big">+79781417930</a>
 <!--<a href="#">Обратный звонок</a>
 <a href="#">Отследить заказ</a>-->                </div>
+=======
+                  <a href="tel:+79788649637" class="phone-big">+79788649637</a>
+<a href="#">Обратный звонок</a>
+<a href="#">Отследить заказ</a>                </div>
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
               </div>
               <div class="copy">
                 <h2>2008 - 2019 © Все права защищены «Чаи Крыма» ™</h2>

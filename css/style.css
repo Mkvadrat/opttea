@@ -1783,6 +1783,7 @@ button.fancybox-button.fancybox-button--thumbs{
     margin-bottom: 38px;
 	color: #000000;
 }
+<<<<<<< HEAD
 .order-info{
 	border: 1px solid #D3D3D3;
 	border-radius: 10px;
@@ -1794,6 +1795,8 @@ button.fancybox-button.fancybox-button--thumbs{
 .order-info .top__info-item {
 	border-bottom: none;
 }
+=======
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 .top__info{
 	display: flex;
     justify-content: space-between;
@@ -2056,7 +2059,11 @@ button.fancybox-button.fancybox-button--thumbs{
 }
 .form__block input{
 	height: 50px;
+<<<<<<< HEAD
     #width: calc((100% / 3) - 9px);
+=======
+    width: calc((100% / 3) - 9px);
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
     background: #FFFFFF;
     border: none;
     padding: 3px 20px 0;
@@ -2162,7 +2169,11 @@ button.fancybox-button.fancybox-button--thumbs{
     width: 28px;
     height: 18px;
     padding: 11px;
+<<<<<<< HEAD
     position: relative;
+=======
+    position: absolute;
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
     top: 0;
     left: 0;
     z-index: 100;
@@ -2284,9 +2295,12 @@ button.fancybox-button.fancybox-button--thumbs{
 .card{
     margin-bottom: 30px;
 }
+<<<<<<< HEAD
 .cont-ok-btn{
 	margin: 0 auto 100px;
 }
+=======
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 /*14.02.19*/
 @media only screen and (max-width: 1200px){
 	
@@ -2363,7 +2377,11 @@ button.fancybox-button.fancybox-button--thumbs{
 
     .logo a img {
         width: 129px;
+<<<<<<< HEAD
         height: auto;
+=======
+        height: 73px;
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
     }
 
     .basket input.form-control.input-lg {
@@ -3086,6 +3104,7 @@ button.fancybox-button.fancybox-button--thumbs{
     /*14.02.19*/
 
 
+<<<<<<< HEAD
 }
 
 #menu.mm-menu_offcanvas.mm-menu_opened, #menu-right.mm-menu_offcanvas.mm-menu_opened {
@@ -3188,4 +3207,6 @@ button.fancybox-button.fancybox-button--thumbs{
 	.row.header-desk {
 		display: block;
 	}
+=======
+>>>>>>> 2c6e011ce118f0915f87e53a53de425776299862
 }
