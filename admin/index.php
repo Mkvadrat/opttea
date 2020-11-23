@@ -54,7 +54,9 @@ $type_arr[4] = 'круп. опт';
                 <td>Тип</td>
                 <td>Дата</td>
                 <td>Кол</td>
-                <td>Имя</td>
+                <td>Фамилия</td>
+				<td>Имя</td>
+				<td>Отчество</td>
                 <td>Контакты</td>
                 <td>Статус</td>
                 <td>Доставка</td>
@@ -95,6 +97,8 @@ $type_arr[4] = 'круп. опт';
 							<td>'.$date.'</td>
 							<td>'.$row['c'].' шт</td>
 							<td>'.$row['name'].'</td>
+							<td>'.$row['firstname'].'</td>
+							<td>'.$row['patronymic'].'</td>
 							<td><div>'.$row['phone'].'</div>'.$row['email'].'</td>
 							<td>'.$st_arr[$row['status']].'</td>
 							<td>'.$row['delivery'].'</td>

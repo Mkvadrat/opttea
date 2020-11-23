@@ -254,8 +254,16 @@ if($country == 'ru'){
                     <td><input placeholder="" id="ur-adres" type="text" name="ur_adres" value="" size="40" /></td>
                 </tr>
             	<tr>
-                	<td>ФИО</td>
-                    <td><input placeholder="фамилия, имя, отчество" id="baskN" type="text" name="name2" value="" size="40" /></td>
+                	<td>Фамилия</td>
+                    <td><input placeholder="фамилия" id="baskN" type="text" name="name2" value="" size="40" /></td>
+                </tr>
+				<tr>
+                	<td>Имя</td>
+                    <td><input placeholder="имя" id="firstname" type="text" name="firstname" value="" size="40" /></td>
+                </tr>
+				<tr>
+                	<td>Отчество</td>
+                    <td><input placeholder="отчество" id="patronymic" type="text" name="patronymic" value="" size="40" /></td>
                 </tr>
                 <tr>
                 	<td>Ваш телефон</td>

@@ -383,6 +383,8 @@ if($ur == 1){
 $dop = $rowOrd['dop'];
 $type = $rowOrd['type'];
 $name = $rowOrd['name'];
+$firstname = $rowOrd['firstname'];
+$patronymic = $rowOrd['patronymic'];
 $email = $rowOrd['email'];
 $city = $rowOrd['city'];
 $phone = $rowOrd['phone'];
@@ -399,7 +401,7 @@ $select = '
 			</select>
 			';
 
-$info = '<b>'.$country.'</b> '.$select.' '. $type_arr[$type].'  '.$name.' '.$phone.' '.$email.' '.$city.' '.$delivery.' <br>'.$dop.'<br><br>';
+$info = '<b>'.$country.'</b> '.$select.' '. $type_arr[$type].'  '.$name.' '.$firstname.' '.$patronymic.' '.$phone.' '.$email.' '.$city.' '.$delivery.' <br>'.$dop.'<br><br>';
 
 
 

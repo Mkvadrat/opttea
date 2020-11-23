@@ -192,18 +192,13 @@ if($country == 'ru'){
           <div class="row">
             <div class="col-md-10 top-nav">
               <ul>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Прайс-лист</a></li>
-                <li><a href="#">Заказ и оплата</a></li>
-                <li><a href="#">Наши магазины</a></li>
-                <li><a href="#">Документы</a></li>
-                <li><a href="#">Франчайзинг</a></li>
-                <li><a href="#">Контакты</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=4">О нас</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=7">Прайс-лист</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=8">Наши магазины</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=9">Документы</a></li>
+				<li><a href="http://tea-crimea.ru/index.php?route=information/contact">Контакты</a></li>
               </ul>
-            </div>
-            <div class="col-md-2 entry">
-              <a href="#">Вход/</a>
-              <a href="#">Регистрация</a>
             </div>
           </div>
         </div>
@@ -212,11 +207,11 @@ if($country == 'ru'){
         <div class="container">
           <div class="row header-desk">
             <div class="col-md-2 logo">
-              <a href="#"><img src="img/tea/logo-big.png" alt="logo" width="180" height="80"></a>
+              <a href="http://tea-crimea.ru/"><img src="img/tea/logo-big.png" alt="logo" width="180" height="80"></a>
             </div>
             <div class="col-md-3 cooperation">
               <p>Крым,  Ялта,  г. Алупка,<br>ул. Крутой спуск  д. 12 а</p>
-              <a href="#" class="button">Сотрудничество и опт</a>
+              <!--<a href="#" class="button">Сотрудничество и опт</a>-->
             </div>
             <div class="col-md-5 data-info">
               <div class="row ">
@@ -227,8 +222,9 @@ if($country == 'ru'){
                   <div class="phone-icon">
                     <img src="img/tea/phone.png" alt="phone" width="24" height="24">
                   </div>
-                  <a href="tel:+79788649637">+7(978)8649637</a>
-                  <a href="tel:+79781417930">+7(978)1417930</a>
+                  <a href="tel:+79782184408">+79782184408</a>
+				  <a href="tel:+79787528287">+79787528287</a>
+				  <a href="tel:+79781417930">+79781417930</a>
                 </div>
               </div>
             </div>
@@ -236,7 +232,7 @@ if($country == 'ru'){
         </div>
       </div>
     </header>
-	<div class="bottom-nav">
+	<!--<div class="bottom-nav">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 nav-bottom">
@@ -268,12 +264,15 @@ if($country == 'ru'){
 				</div>
 			</div>
 		</div>
-    </div>
+    </div>-->
 	
 	<section >
 		<div class="container">
 			<div class="cenText">
 				<h3 style="font-family:Verdana, Geneva, sans-serif; color:#666;" align="center">Ваш заказ принят в обработку. Спасибо<br /><br />Вам на почту придет письмо со счетом для оплаты</h3>
+				<div class="col-12 cooperation">
+				<a href="/" class="button cont-ok-btn">Ок</a>
+				</div>
 			</div>
 		</div>
     </section>
@@ -284,18 +283,16 @@ if($country == 'ru'){
           <div class="col-md-6">
             <div class="footer-content">
               <div class="footer-nav">
-                <nav>
-                  <a href="#">Каталог</a>
-                  <a href="#">Прайс-лист</a>
-                  <a href="#">Заказ и оплата</a>
-                  <a href="#">Наши магазины </a>
-                  <a href="#">Документы </a>
-                  <a href="#">Франчайзинг</a>
-                  <a href="#">Блог</a>
-                  <a href="#">Контакты</a>
-                </nav>
+				<nav>
+					<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=9">Документы</a>
+					<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=7">Прайс-лист</a>
+					<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=11">Заказ и оплата</a>
+					<a href="http://tea-crimea.ru/index.php?route=information/information&amp;information_id=8">Наши магазины</a>
+					<a href="http://tea-crimea.ru/index.php?route=information/news">Блог</a>
+					<a href="http://tea-crimea.ru/index.php?route=information/contact">Контакты</a>
+				</nav>
               </div>
-              <div class="footer-product">
+              <!--<div class="footer-product">
                 <nav>
 					<a href="http://tea.loc/index.php?route=product/category&amp;path=59">Фиточаи</a>
 					<a href="http://tea.loc/index.php?route=product/category&amp;path=60">Стевия, травы</a>
@@ -310,23 +307,25 @@ if($country == 'ru'){
 					<a href="http://tea.loc/index.php?route=product/category&amp;path=69">Косметические масла</a>
 					<a href="http://tea.loc/index.php?route=product/category&amp;path=70">Фигурное мыло</a>
                 </nav>
-              </div>
+              </div>-->
               <div class="footer-company">
                 <div class="address-wrapper">
                   <div class="address">
                     <p>Крым,  Ялта,  г. Алупка,<br>ул. Крутой спуск  д. 12 а</p>
                   </div>
                   <div class="email-footer">
-                    <a href="mailto:tea-crimea@yandex.ru">E-mail: tea-crimea@yandex.ru</a>
+                    <a href="mailto:info@tea-crimea.ru">E-mail: info@tea-crimea.ru</a>
                   </div>
                 </div>
                 <div class="footer-data">
                   <p>Время работы:<br>Пн-Пт с 9:00 до 18:00</p>
                 </div>
                 <div class="phone-footer">
-                  <a href="tel:+79788649637" class="phone-big">+7(978)8649637</a>
-                  <a href="#">Обратный звонок</a>
-                  <a href="#">Отследить заказ</a>
+                  <a href="tel:+79782184408" class="phone-big">+79782184408</a>
+				  <a href="tel:+79787528287" class="phone-big">+79787528287</a>
+                  <a href="tel:+79781417930" class="phone-big">+79781417930</a>
+                  <!--<a href="#">Обратный звонок</a>
+                  <a href="#">Отследить заказ</a>-->
                 </div>
               </div>
               <div class="copy">

@@ -2,6 +2,8 @@
 include("blocks/db.php"); 
 include("blocks/summ.php"); 
 
+date_default_timezone_set('Europe/Moscow');
+
 foreach($_POST as $k => $v){
     $v = str_replace('script', '', $v);
     if(!is_array($v)){
@@ -19,6 +21,8 @@ $email = $_POST['email'];
 $tel = $_POST['tel'];
 $nameArr = $_POST['name'];
 $name2 = $_POST['name2'];
+$firstname = $_POST['firstname'];
+$patronymic = $_POST['patronymic'];
 $dos = $_POST['dos'];
 $city = $_POST['city'];
 $email = $_POST['email'];
@@ -71,8 +75,8 @@ $cost_ua_arr[3] = 'priceOpt';
 $cost_ua_arr[4] = 'large_cost_ua';
 $cost_ua_arr[5] = 'large_cost_ua';
 
-mysql_query(" INSERT INTO `orders` (`id`, `name`, `phone`, `email`, `delivery`, `city`, `date`, `country`, `type`, `dop`, `ur`, `ur_name`, `ur_ogrn`, `ur_inn`, `ur_adres`) 
-							VALUES (NULL, '$name2', '$tel', '$email', '$dos', '$city', '$date', '$country', '$type', '$dop', '$ur', '$ur_name', '$ur_ogrn', '$ur_inn', '$ur_adres'); ");
+mysql_query(" INSERT INTO `orders` (`id`, `name`, `firstname`, `patronymic`, `phone`, `email`, `delivery`, `city`, `date`, `country`, `type`, `dop`, `ur`, `ur_name`, `ur_ogrn`, `ur_inn`, `ur_adres`) 
+							VALUES (NULL, '$name2', '$firstname', '$patronymic', '$tel', '$email', '$dos', '$city', '$date', '$country', '$type', '$dop', '$ur', '$ur_name', '$ur_ogrn', '$ur_inn', '$ur_adres'); ");
 
 //mysql_query(" INSERT INTO `orders` (`id`, `name`, `phone`, `email`, `delivery`, `city`, `date`, `country`, `type`, `dop`) 
 //							VALUES (NULL, '$name2', '$tel', '$email', '$dos', '$city', '$date', '$country', '$type', '$dop'); ");
@@ -100,7 +104,9 @@ $num = $dateArr[2].$mes.substr($dateArr[0],2,2).'/1';
 $html='
 <b>'.$ur_type.'</b><br>
 '.$ur_info.'
-Имя: <b>'.$name2.'</b><br>
+Фамилия: <b>'.$name2.'</b><br>
+Имя: <b>'.$firstname.'</b><br>
+Отчество: <b>'.$patronymic.'</b><br>
 Телефон: <b>'.$tel.'</b><br>
 Email: <b>'.$email.'</b><br>
 Доставка: <b>'.$dos.'</b><br>
